@@ -45,14 +45,14 @@ var questionList = [{
   choices: ['Scientists can use them to study the early solar system.', 'Scientists can use them to make new and stronger materials for building.', 'Studying them will tell us what kind of force field to build', 'So we can determine which ones can be mined for raw materials'],
   answer: 0,
   image: 'img/comet.jpg',
-  explanation: 'Studying the smaller objects allows us to study the early solar system. These smaller objects, such as asteroids and comets, were created back when the solar sytem was first formed and have remain unchanged. Their chemical compositions can tell us a lot about the early solar sytem. Above is a comet on which the European Space Agency landed a probe.'
+  explanation: 'Studying these smaller objects allows us to study the early solar system. These smaller objects, such as asteroids and comets, were created back when the solar sytem was first formed and have remain largely unchanged. Their chemical compositions can tell us a lot about the early solar sytem. Above is a comet on which the European Space Agency landed a probe.'
 },
 {
   question: 'Which of the following is a characteristic of the outer planets?',
   choices: ['dense and rocky', 'they have many moons', 'lots of geologic activity', 'thin to no atmospheres'],
   answer: 1,
   image: 'img/jupiter.jpg',
-  explanation: 'The outer planets are gas giants that have many moons. They most likely do not even have a surface to them. Due to their large size, they have attracted many moons, some of which may contain water. Jupiter has at least 67 moons.'
+  explanation: 'The outer planets are gas giants that have many moons. They most likely do not even have a surface to them. Due to their large size, they have attracted many moons, some of which may contain liquid water. Jupiter has at least 67 moons.'
 },
 {
   question: 'Which set of planets all have rings around them?',
