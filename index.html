@@ -2,40 +2,48 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Science Quiz</title>
-
+    <title>Solar System Quiz</title>
+    <link href="https://fonts.googleapis.com/css?family=Orbitron|Quicksand|Ubuntu" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
     <link rel="stylesheet" href="main.css">
-
   </head>
   <body>
     <div class="wrapper">
       <header>
-        <h1>Test Your Knowledge of Our Solar System</h1>
+        <h1>Do You Know Your Solar System?</h1>
       </header>
       <main>
+      </section>
+      <section class="js-quiz-begin">
+        <div class="js-begin container">
+          <h3>Do you have what it takes to beat a 6th grader?</h3>
+          <div class="js-intro intro">
+            <p>Test your knowledge of our Solar System that is currently being taught in the 6th grade. Click below to find out if you are smarter than a 6th grader...</p>
+          </div>
+        </div>
+      </section>
         <section class="js-quiz-time">
-            <div class="js-question container">
+            <div class="js-question container hidden">
               <h3>What do you call an artificial or natural body that revolves around a larger body?</h3>
-              <div class="js-answers answers">
+              <div class="js-answers answers hidden">
                 <form>
-                  <div class="js-answer-field">
-                    <input type="radio" name="answer" value="0"><span class="choice">moon</span><br>
-                    <input type="radio" name="answer" value="1"><span class="choice">asteroid</span><br>
-                    <input type="radio" name="answer" value="2"><span class="choice">satellite</span><br>
-                    <input type="radio" name="answer" value="3"><span class="choice">planet</span><br>
+                  <div class="js-answer-field field">
+                    <input type="radio" name="answer" value="0" /><span class="choice">moon</span><br>
+                    <input type="radio" name="answer" value="1" /><span class="choice">asteroid</span><br>
+                    <input type="radio" name="answer" value="2" /><span class="choice">satellite</span><br>
+                    <input type="radio" name="answer" value="3" /><span class="choice">planet</span><br>
                   </div>
                   <div class="submitButton">
-                    <input type="submit" value="Submit" class="submitButton">
+                    <input type="submit" value="Submit" class="btn">
                   </div>
                 </form>
               </div>
               <div class="js-explanation explanation hidden">
-                <img src="" alt="">
+                <img src="">
                 <p></p>
               </div>
             </div>
-            <div class="js-info info container">
+            <div class="js-info info container hidden">
               <div class="js-count count half">
                 <span>Question 1 of 10</span>
               </div>
@@ -48,13 +56,14 @@
           <div class="js-final container">
             <h3>Congratulations! You've reached the end of the quiz!</h3>
             <div class="js-results results">
+              <img src="img/system.jpg">
               <p></p>
             </div>
           </div>
         </section>
         <section>
           <div class="container">
-            <button type="button" name="button" class="hidden">Continue</button>
+            <button type="button" name="button" class="btn">Start</button>
           </div>
         </section>
       </main>
