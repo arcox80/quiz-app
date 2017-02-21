@@ -9,35 +9,56 @@
 
   </head>
   <body>
-    <header>
-      <h1>Test Your Knowledge of Our Solar System</h1>
-    </header>
-    <main>
-      <div class="js-quiz quiz-container">
-        <div class="js-question container">
-          <h3>What were smaller moons usually before they became moons?</h3>
-          <div class="js-answers answers">
-            <form>
-              <input type="radio" name="answer" value="0"><span class="choice">abc</span><br>
-              <input type="radio" name="answer" value="1"><span class="choice">def</span><br>
-              <input type="radio" name="answer" value="2"><span class="choice">sghie</span><br>
-              <input type="radio" name="answer" value="3"><span class="choice">padfet</span><br>
-              <div class="submitButton">
-                <input type="submit" value="Submit" class="submitButton">
+    <div class="wrapper">
+      <header>
+        <h1>Test Your Knowledge of Our Solar System</h1>
+      </header>
+      <main>
+        <section class="js-quiz-time">
+            <div class="js-question container">
+              <h3>What do you call an artificial or natural body that revolves around a larger body?</h3>
+              <div class="js-answers answers">
+                <form>
+                  <div class="js-answer-field">
+                    <input type="radio" name="answer" value="0"><span class="choice">moon</span><br>
+                    <input type="radio" name="answer" value="1"><span class="choice">asteroid</span><br>
+                    <input type="radio" name="answer" value="2"><span class="choice">satellite</span><br>
+                    <input type="radio" name="answer" value="3"><span class="choice">planet</span><br>
+                  </div>
+                  <div class="submitButton">
+                    <input type="submit" value="Submit" class="submitButton">
+                  </div>
+                </form>
               </div>
-            </form>
+              <div class="js-explanation explanation hidden">
+                <img src="" alt="">
+                <p></p>
+              </div>
+            </div>
+            <div class="js-info info container">
+              <div class="js-count count half">
+                <span>Question 1 of 10</span>
+              </div>
+              <div class="js-score score half">
+                <span>Current Score: 0</span>
+              </div>
+            </div>
+        </section>
+        <section class="js-quiz-end hidden">
+          <div class="js-final container">
+            <h3>Congratulations! You've reached the end of the quiz!</h3>
+            <div class="js-results results">
+              <p></p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="js-info info container">
-        <div class="js-number count half">
-          <span>Question 8 of 10</span>
-        </div>
-        <div class="js-score score half">
-          <span>5 correct, 2 incorrect</span>
-        </div>
-      </div>
-    </main>
+        </section>
+        <section>
+          <div class="container">
+            <button type="button" name="button" class="hidden">Continue</button>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <!-- link to jquery -->
   <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>

@@ -3,8 +3,21 @@
 }
 
 body {
-  padding: 15px;
-  background-color: lightgray;
+  padding: 20px 10px;
+}
+
+.wrapper {
+  width: 50%;
+  min-width: 300px;
+  max-width: 665px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+header {
+  min-width: 290px;
 }
 
 h1 {
@@ -12,7 +25,6 @@ h1 {
 }
 
 .container {
-  width: 50%;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -33,14 +45,36 @@ form {
 .half {
   display: inline-block;
   width: 49%;
+  min-width: 150px;
   height: auto;
   padding: 10px;
   border: 1px solid black;
   text-align: center;
   background-color: white;
+  margin-bottom: 20px;
 }
 
 .submitButton {
   margin-top: 10px;
   text-align: center;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.explanation {
+  min-width: 278px;
+  background-size: cover;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.hidden {
+  display: none;
 }
