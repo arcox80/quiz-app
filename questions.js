@@ -38,14 +38,14 @@ var questionList = [{
   choices: ['our distance from the sun', 'liquid water on its surface', 'a protective atmosphere that also regulates our climate', 'all of the above'],
   answer: 3,
   image: 'img/atmosphere.jpg',
-  explanation: 'Our distance from the sun, having liquid water on our surface, and having a protective atmosphere all contribute to making life possible on Earth. Mercury is too close to the sun and the gas giants are too far away. The atmosphere on Venus is too dense and hostile and the one on Mars is too thin to for water to flow as a liquid.'
+  explanation: 'Our distance from the sun, having liquid water on our surface, and having a protective atmosphere all contribute to making life possible on Earth. Mercury is too close to the sun and the gas giants are too far away. The atmosphere on Venus is too dense and hostile and the one on Mars is too thin for water to flow as a liquid.'
 },
 {
   question: 'Why is it useful to study the smaller objects of the solar system?',
   choices: ['Scientists can use them to study the early solar system.', 'Scientists can use them to make new and stronger materials for building.', 'Studying them will tell us what kind of force field to build', 'So we can determine which ones can be mined for raw materials'],
   answer: 0,
   image: 'img/comet.jpg',
-  explanation: 'Studying the smaller objects allows us to study the early solar system. These smaller objects, such as asteroids and comets, were formed back when the solar sytem was first formed and have remain unchanged. Their chemical compositions can tell us a lot about the early solar sytem. Above is a comet on which the European Space Agency landed a probe.'
+  explanation: 'Studying the smaller objects allows us to study the early solar system. These smaller objects, such as asteroids and comets, were created back when the solar sytem was first formed and have remain unchanged. Their chemical compositions can tell us a lot about the early solar sytem. Above is a comet on which the European Space Agency landed a probe.'
 },
 {
   question: 'Which of the following is a characteristic of the outer planets?',
@@ -59,7 +59,7 @@ var questionList = [{
   choices: ['Inner Planets', 'Outer Planets', 'Terrestrial Planets', 'None of the above'],
   answer: 1,
   image: 'img/saturn.jpg',
-  explanation: 'The outer planets all have rings around them. While Saturn is known for its rings, the other gas giants also have rings. However, their rings are smaller, fainter, and much harder to pick up without powerful telescopes and satellites.'
+  explanation: 'The outer planets all have rings around them. While Saturn is known for its rings, the other gas giants also have rings. However, their rings are smaller, fainter, and much harder to observe without powerful telescopes and satellites.'
 },
 {
   question: 'Which of the following are NOT objects we would find in space, in our solar system?',

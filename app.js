@@ -1,11 +1,24 @@
 questionList;
 
 var state = {
-  questionNum: 0,
+  questionNum: -2,
   score: 0
 };
 
 //Render Functions
+var renderStart = function() {
+  $('.js-quiz-begin').toggleClass('hidden');
+  $('.js-question').toggleClass('hidden');
+  $('.js-answers').toggleClass('hidden');
+  $('.js-info').toggleClass('hidden');
+  $('button').toggleClass('hidden');
+  $('button').text('Continue');
+  renderQuestion(state);
+  renderForm(state);
+  renderCount(state);
+  renderScore(state);
+};
+
 var renderQuestion = function(state) {
   var whichQuestion = questionList[state.questionNum];
   $('.js-question').find('h3').text(whichQuestion.question);
@@ -57,28 +70,21 @@ var renderResults = function() {
   $('.js-quiz-end').toggleClass('hidden');
   $('.js-results').find('p').text('You got ' + state.score + ' out of 10 questions correct.');
   if (state.score > 9) {
-    $('.js-results').find('p').append('<p>Who do you think you are? Neil deGrasse Tyson?!</p>');
+    $('.js-results').find('p').append('<p>Who do you think you are, Neil deGrasse Tyson?!</p>');
   } else if (state.score > 7) {
-    $('.js-results').find('p').append('<p>Feel proud! You did better than the average 6th grader!</p>');
+    $('.js-results').find('p').append('<p>Yay! You ARE smarter than the average 6th grader! I was worried there for a second.</p>');
   } else if (state.score > 3) {
-    $('.js-results').find('p').append('<p>Well there is definitely room for improvement.</p>');
+    $('.js-results').find('p').append('<p>Yeah, it turns out you are NOT smarter than a 6th grader, but you probably already knew that.</p>');
   } else {
-    $('.js-results').find('p').append('<p>Ouch! You\'re better than this. Hit the books!</p>');
+    $('.js-results').find('p').append('<p>Ouch. Maybe you should try some 5th grade science instead....</p>');
   }
   $('button').text('Try Again');
 };
 
 var renderRestart = function() {
   $('.js-quiz-end').toggleClass('hidden');
-  $('.js-question').toggleClass('hidden');
-  $('.js-answers').toggleClass('hidden');
-  $('.js-info').toggleClass('hidden');
-  renderQuestion(state);
-  renderForm(state);
-  renderCount(state);
-  renderScore(state);
-  $('button').text('Continue');
-  $('button').toggleClass('hidden');
+  $('.js-quiz-begin').toggleClass('hidden');
+  $('button').text('Start');
 };
 
 //Event Handlers
@@ -103,9 +109,12 @@ $('button').click(function() {
     renderResults();
     state.questionNum = -1;
   } else if (state.questionNum === -1) {
-    state.questionNum = 0;
+    state.questionNum = -2;
     state.score = 0;
     renderRestart();
+  } else if (state.questionNum === -2) {
+    state.questionNum = 0;
+    renderStart();
   } else {
     $(this).toggleClass('hidden');
     $('.js-explanation').toggleClass('hidden');
