@@ -1,3 +1,4 @@
+//Including list of questions, answers, images, and explanations from questions.js
 questionList;
 
 var state = {
@@ -11,8 +12,7 @@ var renderStart = function() {
   $('.js-question').toggleClass('hidden');
   $('.js-answers').toggleClass('hidden');
   $('.js-info').toggleClass('hidden');
-  $('button').toggleClass('hidden');
-  $('button').text('Continue');
+  $('button').toggleClass('hidden').text('Continue');
   renderQuestion(state);
   renderForm(state);
   renderCount(state);
@@ -78,7 +78,7 @@ var renderResults = function() {
   } else {
     $('.js-results').find('p').append('<p>Ouch. Maybe you should try some 5th grade science instead....</p>');
   }
-  $('button').text('Try Again');
+  $('button').text('Try Again?');
 };
 
 var renderRestart = function() {
