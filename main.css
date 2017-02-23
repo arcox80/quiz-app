@@ -12,7 +12,6 @@ body {
 }
 
 .wrapper {
-  width: 75%;
   min-width: 300px;
   max-width: 665px;
   height: auto;
